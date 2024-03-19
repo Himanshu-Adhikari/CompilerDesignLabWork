@@ -1,4 +1,4 @@
-Hello Everyone i am Himanshu Adhikari  and this is my compiler's labwork Consisting of:
+Hello Everyone i am Himanshu Adhikari  and this is my compiler's labwork that consisting of:
 1.	Design a LEX Code to count the number of lines, space, tab-meta character and rest of characters in a given Input pattern. 
 2.	Design a LEX Code to identify and print valid Identifier of C/C++ in given Input pattern. 
 3.	Design a LEX Code to identify and print integer and float value in given Input pattern.
