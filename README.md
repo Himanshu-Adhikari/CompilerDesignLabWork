@@ -22,5 +22,5 @@ In Order to run any .lex or .l File
 first you need to lex tool or flex tool in your system and then follow the below steps
 
 lex test.lex                      
-gcc lex.yy.c
+gcc lex.yy.c     
 ./a.out
