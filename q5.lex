@@ -1,16 +1,13 @@
-
 %{
     #include<stdio.h>
     int charCount = 0;
     int wordCount = 0;
     int spaceCount = 0;
-    int writing=0;
 %}
 
 %%
-" " {if(writing){wordCount++,writing=0;}spaceCount++;}
-"\n" {if(writing){wordCount++,writing=0;}}
-[^ ] {writing=1,charCount++;}
+[^\t\n" "]+   { charCount += yyleng; wordCount++; }
+" "     { spaceCount++; }
 %%
 int yywrap() {
     return 1;
