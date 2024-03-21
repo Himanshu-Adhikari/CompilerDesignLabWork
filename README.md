@@ -18,3 +18,9 @@ LEX code using Regular Grammar (with file-handling):
 8.	Design a LEX Code to extract all html tags in the given HTML file at run time and store into Text file given at run time.
 
 
+In Order to run any .lex or .l File 
+first you need to lex tool or flex tool in your system and then follow the below steps
+
+lex test.lex
+gcc lex.yy.c
+./a.out
