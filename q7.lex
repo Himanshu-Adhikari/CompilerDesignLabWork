@@ -3,9 +3,9 @@
 %}
 
 %%
-"//"[^/n]* { ; }
+"//".*\n { ; }
 "/*"([^*]|[*]+[^/])*"*/" { ; }
-. {fprintf(yyout,"%s",yytext);}
+.|[\n] {fprintf(yyout,"%s",yytext);}
 %%
 
 int yywrap()
@@ -15,7 +15,7 @@ int yywrap()
 
 int main()
 {
-    printf("Enter I/p:\n");
+    yyin=fopen("input.c","r");
     yyout=fopen("out.c","w");
     yylex();
     return 0;
