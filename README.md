@@ -16,7 +16,7 @@ LEX code using Regular Grammar (with file-handling):
 6.	Design a LEX Code to replace white spaces of ‘Input.txt’ file by a single blank character into ‘Output.txt’ file.
 7.	Design a LEX Code to remove the comments from any C-Program given at run-time and store into ‘out.c’ file.
 8.	Design a LEX Code to extract all html tags in the given HTML file at run time and store into Text file given at run time.
-
+14. 	Yacc-Lex Code for converting infix expression to postfix expression.
 
 In Order to run any .lex or .l File 
 first you need to lex tool or flex tool in your system and then follow the below steps
